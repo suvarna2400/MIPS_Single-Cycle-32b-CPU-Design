@@ -1,4 +1,5 @@
-**Design Hierarchy:** The processor is 'organized in a modular hierarchy where mips_single_cycle.v serves as the top-level integration module, combining the controlpath and top_datapath modules. The datapath is further decomposed into reusable functional blocks such as the Program Counter, Instruction Memory, Register File, Sign Extension Unit, ALU, and Data Memory.
+# Design Hierarchy
+The processor is organized in a modular hierarchy where mips_single_cycle.v serves as the top-level integration module, combining the controlpath and top_datapath modules. The datapath is further decomposed into reusable functional blocks such as the Program Counter, Instruction Memory, Register File, Sign Extension Unit, ALU, and Data Memory.
 
 mips_single_cycle.v
     controlpath.v
