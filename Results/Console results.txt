@@ -1,0 +1,35 @@
+Linear search result on single-cycle CPU
+arr[0] memory[0] = 7
+arr[1] memory[1] = 3
+arr[2] memory[2] = 9
+arr[3] memory[3] = 5
+key    memory[4] = 9
+result memory[5] = 2
+$t6 = 2
+
+
+Single-cycle CPU performance metrics
+Total cycles                       = 12
+Useful instruction count           = 12
+CPI                                = 1.000
+IPC                                = 1.000
+Software stall cycles, NOPs        = 0
+Data hazard NOP cycles             = 0
+Branch delay NOP cycles            = 0
+Branch flush count                 = 0
+
+Instruction mix observed in single-cycle fetch
+R-type                             = 1
+lw                                 = 4
+sw                                 = 1
+beq                                = 3
+addi                               = 2
+nop                                = 0
+other                              = 1
+
+Single-cycle datapath unit utilization
+IF active cycles                   = 12 (100.00%)
+ID active cycles                   = 12 (100.00%)
+EX active cycles                   = 12 (100.00%)
+MEM active cycles                  = 5 (41.67%)
+WB active cycles                   = 7 (58.33%)
