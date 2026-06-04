@@ -1,6 +1,11 @@
 # Single-Cycle MIPS Processor
 
-A 32-bit Single-Cycle MIPS Processor implemented in Verilog HDL.
+## Background
+
+This project originated from my study of the NPTEL course "Hardware Modelling using Verilog."
+
+The course provided the RTL design principles and Verilog modelling techniques that formed the foundation for building 
+A 32-bit Single-Cycle MIPS Processor in Verilog HDL.
 
 This project was developed to understand the internal operation of a processor datapath before moving toward a pipelined architecture. The implementation follows the classical MIPS single-cycle design, where every instruction completes within one clock cycle.
 
