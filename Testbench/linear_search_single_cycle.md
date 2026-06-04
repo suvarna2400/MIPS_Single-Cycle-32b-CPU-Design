@@ -1,4 +1,4 @@
-###### **Linear search program for the normal single-cycle MIPS processor**
+### **Linear search program for the normal single-cycle MIPS processor**
 
 
 
