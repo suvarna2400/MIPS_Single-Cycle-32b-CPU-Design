@@ -136,7 +136,6 @@ module modified_metrics_tb;
 
     task print_metrics;
         begin
-            $display("=================================================");
             $display("Single-cycle CPU performance metrics");
             $display("Total cycles                       = %0d", total_cycles);
             $display("Useful instruction count           = %0d", instruction_count);
@@ -162,7 +161,6 @@ module modified_metrics_tb;
             $display("EX active cycles                   = %0d (%0.2f%%)", ex_active_cycles, ex_util);
             $display("MEM active cycles                  = %0d (%0.2f%%)", mem_active_cycles, mem_util);
             $display("WB active cycles                   = %0d (%0.2f%%)", wb_active_cycles, wb_util);
-            $display("=================================================");
         end
     endtask
 
@@ -256,16 +254,14 @@ module modified_metrics_tb;
 
         calculate_metrics();
 
-        $display("=================================================");
         $display("Linear search result on single-cycle CPU");
         $display("arr[0] memory[0] = %0d", uut.data_path.DM.memory[0]);
         $display("arr[1] memory[1] = %0d", uut.data_path.DM.memory[1]);
         $display("arr[2] memory[2] = %0d", uut.data_path.DM.memory[2]);
         $display("arr[3] memory[3] = %0d", uut.data_path.DM.memory[3]);
-        $display("key    memory[4] = %0d", uut.data_path.DM.memory[4]);
+        $display("key memory[4] = %0d", uut.data_path.DM.memory[4]);
         $display("result memory[5] = %0d", uut.data_path.DM.memory[5]);
         $display("$t6 = %0d", uut.data_path.RF.registers[14]);
-        $display("=================================================");
 
         print_metrics();
 
