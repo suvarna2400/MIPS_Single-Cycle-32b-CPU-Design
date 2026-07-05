@@ -22,7 +22,7 @@ result = 2
 
 $t6 = 2  
 
-✔ The processor correctly finds the key at index 2.
+The processor correctly finds the key at index 2.
 
 ---
 
@@ -59,7 +59,7 @@ CPI = 1 (ideal case)
 
 Performance is NOT necessarily high because:
 
-👉 Clock Period dominates execution time
+Clock Period dominates execution time
 
 ---
 
@@ -132,7 +132,7 @@ take only ~6 ns of work but are forced to occupy:
 
 9 ns clock cycle
 
-👉 This causes internal time wastage.
+This causes internal time wastage.
 
 ---
 
@@ -156,7 +156,7 @@ take only ~6 ns of work but are forced to occupy:
 
 # 10. Functional Unit Activity (NOT Pipeline Stages)
 
-⚠ Important: These are NOT pipeline stages  
+Important: These are NOT pipeline stages  
 They are functional block activations.
 
 | Unit | Active Cycles | Meaning |
@@ -229,7 +229,7 @@ Here:
 - CPI = 1
 - Clock Period = 9 ns (large)
 
-👉 Performance bottleneck = Clock period
+Performance bottleneck = Clock period
 
 ---
 
@@ -247,11 +247,11 @@ Although the single-cycle MIPS processor achieves:
 
 its performance is fundamentally limited by:
 
-❗ Long critical path delay → large clock period  
+Long critical path delay → large clock period  
 
 ---
 
-# 🚀 Key Insight
+# Key Insight
 
 Single-cycle CPU improves simplicity, not speed.  
 Pipeline improves speed by increasing clock frequency, not by reducing CPI.
